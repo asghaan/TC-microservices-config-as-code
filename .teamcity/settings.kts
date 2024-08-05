@@ -1,4 +1,10 @@
-import jetbrains.buildServer.configs.kotlin.*
+import demo.ServiceProjectByCode
+import demo.ServiceProjectByTemplate
+import demo.dotNetBuild
+import demo.templates.DotNetBuild
+import demo.templates.JavaBuild
+import jetbrains.buildServer.configs.kotlin.project
+import jetbrains.buildServer.configs.kotlin.version
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -25,4 +31,10 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2024.03"
 
 project {
+    template(JavaBuild)
+    template(DotNetBuild)
+
+    subProject(ServiceProjectByTemplate("Auth Service", "First service URL", JavaBuild))
+
+    subProject(ServiceProjectByCode("Other Service", "Second service URL", dotNetBuild))
 }
