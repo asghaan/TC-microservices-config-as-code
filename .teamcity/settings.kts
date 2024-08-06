@@ -3,6 +3,7 @@ import demo.ServiceProjectByTemplate
 import demo.dotNetBuild
 import demo.templates.DotNetBuild
 import demo.templates.JavaBuild
+import demo.templates.MavenAKSBuild2024
 import jetbrains.buildServer.configs.kotlin.project
 import jetbrains.buildServer.configs.kotlin.version
 
