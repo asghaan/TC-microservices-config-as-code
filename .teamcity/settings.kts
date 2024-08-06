@@ -34,6 +34,7 @@ version = "2024.03"
 project {
     template(JavaBuild)
     template(DotNetBuild)
+    template(MavenAKSBuild2024)
 
     subProject(ServiceProjectByTemplate("Java Service One By Template", "First service URL", JavaBuild))
     subProject(ServiceProjectByTemplate("Java Service Two By Template", "https://www.google.com", JavaBuild))
