@@ -34,7 +34,7 @@ project {
     template(JavaBuild)
     template(DotNetBuild)
 
-    subProject(ServiceProjectByTemplate("Java Service", "First service URL", JavaBuild))
-
+    subProject(ServiceProjectByTemplate("Java Service One By Template", "First service URL", JavaBuild))
+    subProject(ServiceProjectByTemplate("Java Service Two By Template", "https://www.google.com", JavaBuild))
     subProject(ServiceProjectByCode("DotNet Service", "Second service URL", dotNetBuild))
 }
