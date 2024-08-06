@@ -6,7 +6,7 @@ import jetbrains.buildServer.configs.kotlin.buildSteps.maven
 import jetbrains.buildServer.configs.kotlin.buildSteps.powerShell
 import jetbrains.buildServer.configs.kotlin.Template
 
-object MavenAksBuild2024 : Template({
+object MavenAKSBuild2024 : Template({
     name = "MAVEN AKS BUILD 2024"
 
     publishArtifacts = PublishMode.SUCCESSFUL
